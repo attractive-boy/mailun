@@ -1,0 +1,53 @@
+.consult {
+  padding: 20px;
+  background-color: #f9f9f9; // 背景色
+  border-radius: 10px; // 圆角
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // 阴影
+}
+
+.title {
+  font-size: 44px; // 字体大小
+  font-weight: bold; // 字体加粗
+  color: #333; // 字体颜色
+  margin-bottom: 10px; // 下边距
+  display: block;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 38px; // 字体大小
+  color: #666; // 字体颜色
+  margin-bottom: 20px; // 下边距
+  display: block;
+  text-align: center;
+}
+
+.at-list {
+  margin-top: 20px; // 顶部边距
+}
+
+.at-list-item {
+  border-radius: 8px; // 圆角
+  background-color: #fff; // 列表项背景色
+  padding: 15px; // 内边距
+  margin-bottom: 10px; // 下边距
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); // 阴影
+}
+
+.at-input {
+  margin-top: 10px; // 顶部边距
+  border-radius: 8px; // 圆角
+}
+
+.at-radio,
+.at-checkbox {
+  margin-top: 10px; // 顶部边距
+}
+
+.at-button {
+  margin-top: 20px; // 顶部边距
+  width: 100%; // 按钮宽度
+  border-radius: 8px; // 圆角
+  background-color: #007aff; // 按钮背景色
+  color: white; // 按钮字体颜色
+}

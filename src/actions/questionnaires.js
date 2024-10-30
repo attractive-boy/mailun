@@ -18,7 +18,7 @@ const receiveQuestionnaires = (data) => ({
 
 export const fetchQuestionnaires = () => async (dispatch) => {
   dispatch(requestQuestionnaires());
-  const data = await api.request("/api/questionnaires");
+  const data = await api.request("/wxapi/questionnaires");
   return dispatch(receiveQuestionnaires(data));
 };
 

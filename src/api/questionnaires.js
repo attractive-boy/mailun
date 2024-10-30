@@ -340,7 +340,7 @@ export default {
       };
   
       // 发起 POST 请求提交答案
-      const res = await request(`/api/questionnaires/${questionnaireId}/submit`, {
+      const res = await request(`/wxapi/questionnaires/${questionnaireId}/submit`, {
         method: 'POST',
         data,
       });

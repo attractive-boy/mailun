@@ -24,7 +24,7 @@ export default function Login() {
       
       if (code) {
         // 发送 code 到后端进行处理
-        const res = await request('/api/miniprogrameLogin',{
+        const res = await request('/wxapi/miniprogrameLogin',{
           
           method: 'POST',
           data: { code }
@@ -80,7 +80,7 @@ export default function Login() {
           if (nickname1 && avatar) {
             // 头像上传到服务器
             const uploadRes = await Taro.uploadFile({
-              url: BASE_API_URL + '/api/uploadAvatar',
+              url: BASE_API_URL + '/wxapi/uploadAvatar',
               filePath: avatar,
               name: 'avatar',
             });
@@ -93,7 +93,7 @@ export default function Login() {
             }
             console.log('uploadRes===>'+ uploadRes.data);
             // 提交用户信息和用户名到后端
-            const res1 = await request('/api/registerUser',{
+            const res1 = await request('/wxapi/registerUser',{
               method: 'POST',
               data: { 
                 avatarUrl: JSON.parse(uploadRes.data).filePath,

@@ -6,6 +6,7 @@ export default {
     'pages/introduce/index',
     'pages/questionnaire/index',
     'pages/result/index',
+    'pages/consult/index',
     
   ],
   window: {

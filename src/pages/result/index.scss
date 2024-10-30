@@ -3,3 +3,13 @@
   //换行
   flex-wrap: wrap;
 }
+
+.login-button {
+  width: 80%;
+  // height: 45rpx; 
+  // font-size: 18rpx; 
+  border-radius: 22rpx; 
+  background: linear-gradient(90deg, #1d72b8, #1d82c7); // 渐变背景
+  color: #fff;
+  box-shadow: 0 4rpx 6rpx rgba(0, 0, 0, 0.2); // 按钮阴影
+}

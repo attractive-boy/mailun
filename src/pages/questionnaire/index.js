@@ -52,9 +52,9 @@ class Questionnaire extends Component {
               console.log('Result:', result);
               // 将结果序列化为 JSON 字符串并进行编码
               const encodedResults = encodeURIComponent(JSON.stringify(result.results));
-
+              const responseId = result.responseId;
               // 使用 redirectTo 方法并传递结果作为查询参数
-              Taro.redirectTo({ url: `/pages/result/index?results=${encodedResults}` });
+              Taro.redirectTo({ url: `/pages/result/index?results=${encodedResults}&responseId=${responseId}` });
             })
         } else {
           setTimeout(() => this.setState({ currentIndex: currentIndex + 1 }), 200);
